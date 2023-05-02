@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body{
+  font-family: "Nunito Sans", sans-serif;
+  display: grid;
+  grid-template-rows: 100vh 1fr 70px;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  text-align: center;
+}
+
+
+
+
+/* HEADER CODE */
+header{
+  background-image: url(./img/new-zealand-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: header;
+}
+
+header p{
+  order: -1;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-shadow: black 2px 2px 7px;
+}
+
+header h1{
+  text-shadow: black 2px 2px 7px;
+  color: white;
+  font-size: 2.5rem;
+}
+
+header a{
+  color: white;
+}
+header a:hover{
+  transition: 0.3s all;
+  color: #dba00c
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li{
+  margin: 1rem;
+}
+
+
+
+
+
+/* MAIN CODE */
+.index{
+  max-width: 1200px;
+  min-height: 50vh;
+  grid-area: main;
+  margin: 0 auto;
+}
+
+main article h2{
+  margin: 5rem 0rem;
+}
+
+
+.choose-us-box{
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose-us-box li{
+  background-color: #dba00c;
+  box-shadow: grey 1px 2px 6px 0px;
+  min-height: 10rem;
+  display: flex;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.choose-us-box li p {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.choose-us-box span {
+  color: white;
+  font-size: 4rem;
+  margin: auto 0;
+  width: 40%;
+}
+
+.choose-us-box li:nth-child(even) {
+  background-color: #cc8500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.place-to-visit {
+  margin: 0 3rem;
+}
+.place-to-visit p{
+  display: none;
+}
+.place-to-visit h3{
+  color: #cc8500;
+  font-size: 2rem;
+}
+
+.place-to-visit  img{
+  filter: grayscale(0);
+  margin-bottom: 5rem;
+}
+.place-to-visit  img:hover{
+  filter: grayscale(1);
+}
+
+
+
+
+/* FOOTER CODE*/
+footer{
+  background-color: #1d1a15;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/* GENERAL CODE */
+p{
+  color: #dba00c;
+}
+
+/* FIN DEL CODIGO DE INICIO  */
+
+/* COMIENZO DEL CODIGO DE SERVICIOS */
+
+/* CODIGO HEADER  */
+.services{
+  background-image: url(./img/services.jpg);
+}
+.services h1{
+  margin-bottom: 2rem;
+}
+.services p {
+  display: none;
+}
+
+/* CODIGO MAIN */
+.service{
+  min-height: 15rem;
+  min-width: 16rem;
+  box-shadow: #404040 1px 1px 10px ;
+  background-color: #dba00c;
+  margin: 3rem 5rem;
+  padding: 0.2rem;
+}
+.service p {
+color: white;
+font-size: 2rem;
+margin: 1rem 0rem  ;
+}
+.service p:last-child{
+  color: #dba00c; 
+  font-weight: bold;
+  background-color: white;
+  font-size: 5rem;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+/* FIN DEL CODIGO DE SERVICIOS  */
+
+/* COMIENZO DEL CODIGO DE SOBRE NOSOTROS */
+
+/* CODIGO HEADER */
+header[class=about]{
+  background-image: url(./img/about-us.jpg);
+}
+header[class=about] p{
+  display: none;
+}
+
+/* CODIGO MAIN */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mask{
+  display: flex;
+  margin: 0 auto;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #dba00c;
+  box-shadow: 1px 1px 10px #404040;
+}
+.mask img{
+  object-fit: cover;
+}
+.about-article section h3{
+  color: #dba00c;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.about-article p{
+  margin-top: 1rem;
+  color: black;
+}
+
+.form-container{
+  width: 20rem;
+  background-color: rgb(242 242 242);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+.form-article h2{
+  margin-bottom: 0;
+}
+input{
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #979797;
+}
+label{
+  font-size: 1.2rem;
+}
+label[for=email]{
+  margin-top: 1rem;
+}
+fieldset{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  text-align: left;
+}
+button{
+  background-color: #dba00c;
+  color: white;
+  margin: 1rem 1rem 0 0;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #dba00c;
+}
+
+
+@media screen and (min-width:640px) {
+  header h1{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  /* CODIGO DE INICIO */
+
+
+  .choose-us-box{
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .place-to-visit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo titulo"
+    "imagen1 imagen2";
+    column-gap: 7rem;
+  }
+  .place-to-visit h2{
+    grid-area: titulo;
+  }
+  .place-to-visit section:first-child{
+    grid-area: imagen1;
+  }
+  .place-to-visit section:last-child{
+    grid-area: imagen2;
+  }
+
+  /* CODIGO DE SOBRRE NOSOTROS */
+  .about-article{
+    display: grid;
+    grid-template-rows: 150px 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo titulo"
+    "titulo2 titulo2"
+    "imagen1 imagen2";
+    column-gap: 2rem;
+
+  }
+  .about-article h2{
+    grid-area: titulo;
+  }
+  .about-article p{
+    grid-area: titulo2;
+  }
+  .about-article section:first-child{
+    grid-area: imagen1;
+  }
+  .about-article section:last-child{
+    grid-area: imagen2;
+  }
+  .form-container{
+    width: 35rem;
+  }
+}
+@media screen and (min-width:1536px) {
+
+  /* CODIGO SERVICIOS */
+  .service-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    padding: 10rem;
+  }
+  .service{
+    width: 20rem;
+    margin: 0;
+  }
+
+  .service:nth-child(2n){
+    position: relative;
+    bottom: 100px;
+  }
+}

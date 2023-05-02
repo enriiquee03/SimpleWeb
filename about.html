@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon-kiwi.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Sobre Nosotros</title>
+</head>
+
+<body>
+  <header class="about">
+    <h1>Sobre nosotros</h1>
+    <p>Conoce un poco más sobre nuestra agencia</p>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./services.html">Servicios</a></li>
+        <li><a href="./about.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="about">
+    <article class="about-article">
+      <h2>Nuestro equipo</h2>
+      <p>Aquí puedes saber quien hay detrás de Kiwi Salvaje</p>
+      <section>
+        <h3>Laura</h3>
+        <div class="mask">
+          <img width="640" height="424" src="./img/laura.jpg" alt="Laura junto al lago por la tarde" />
+        </div>
+        <p>Apasionada de la naturaleza y los animales.</p>
+      </section>
+      <section>
+        <h3>Juan</h3>
+        <div class="mask">
+          <img width="640" height="424" src="./img/juan.jpg" alt="Juan descansando en la playa" />
+        </div>
+        <p>Se conoce cada rincón de las ciudades principales.</p>
+      </section>
+    </article>
+    <article class="form-article">
+      <h2>Contacta con nosotros</h2>
+      <div class="form-container">
+        <form method="POST" data-netlify="true" name="contactForm">
+          <fieldset>
+            <label for="userName">Nombre:</label>
+            <input type="text" id="userName" name="userName" placeholder="Antonio" autocomplete="off" required />
+          </fieldset>
+          <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="antonio@gmail.com" autocomplete="off" required />
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; Agencia Kiwi Salvaje</p>
+  </footer>
+</body>
+
+</html>
